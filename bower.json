@@ -1,0 +1,18 @@
+{
+  "name": "angular-template",
+  "version": "0.0.0",
+  "homepage": "https://github.com/breck421/angular-template",
+  "authors": [
+    "Jordan <jordan.papaleo@clearcapital.com>"
+  ],
+  "description": "front end dependecies for basic angular template",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-ng-app="App">
+<head>
+	<meta charset="utf-8" />
+	<meta content="global" name="distribution" />
+	<meta content="follow, all" name="robots" />
+	<meta content="en" name="language" />
+
+	<title></title>
+
+	<link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css" />
+	<link type="text/css" rel="stylesheet" href="assets/styles/main.min.css" />
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav role="navigation" class="nav navbar-inverse">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#/">Page Title</a>
+				</div>
+
+				<social-media class="nav navbar-nav navbar-right"></social-media>
+
+				<ul class="nav navbar-nav">
+					<li><a href="#/home">Home</a></li>
+					<li><a href="#/about">About</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<ng-view></ng-view>
+
+		<footer ng-controller="FooterController">&copy; {{ currentYear }}</footer>
+	</div>
+
+	<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="libs/angular/angular.js"></script>
+	<script type="text/javascript" src="libs/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="libs/angular-resource/angular-resource.js"></script>
+
+	<script type="text/javascript" src="app/app.js"></script>
+	<script type="text/javascript" src="app/views/home/HomeController.js"></script>
+	<script type="text/javascript" src="app/views/about/AboutController.js"></script>
+	<script type="text/javascript" src="app/views/footer/FooterController.js"></script>
+</body>
+</html>

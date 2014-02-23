@@ -1,0 +1,15 @@
+<section>
+	<h1>Home</h1>
+	<p>{{ testText }}</p>
+
+	<ul>
+		<li ng-repeat="thing in things">
+			<a ng-click="dataBindThing(thing)">{{ thing }}</a>
+		</li>
+	</ul>
+
+
+	<h4>This test is data bound: {{ dataBoundText }}</h4>
+	<p>Where did all the javascript go?</p>
+
+</section>
